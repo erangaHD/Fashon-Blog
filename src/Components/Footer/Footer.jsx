@@ -1,0 +1,80 @@
+import { Box, Stack, Typography, styled } from '@mui/material'
+import React from 'react'
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
+
+const SocialBox = styled(Box)({
+    display: 'flex',
+    gap: 10,
+    color: 'white'
+})
+
+const Footer = () => {
+  return (
+    <Box
+    sx={{
+        background:'black',
+        height:'300px'
+    }}
+    >
+        <Stack direction={{xs:'row', md:'row'}} p={7}>
+            <Box flex={1}>
+                <Typography color={'white'} align='center'>
+                    Contact us
+                </Typography>
+                <Typography color={'white'} align='center'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </Typography>
+                <Typography color={'white'} align='center'>
+                    Lorem ipsum dolor sit amet.
+                </Typography>
+                <Typography color={'white'} align='center'>
+                    Lorem amet.
+                </Typography>
+            </Box>
+
+            <Box flex={1}>
+                <Typography color={'white'} align='center'>
+                    Data policy
+                </Typography>
+                <Typography color={'white'} align='center'>
+                    Cookies
+                </Typography>
+                <Typography color={'white'} align='center'>
+                    Data Saftey
+                </Typography>
+            </Box>
+
+            <Box flex={1}>
+                <Typography color={'white'} align='center'>
+                    Categories
+                </Typography>
+                <Typography color={'white'} variant='body2' align='center'>
+                    Kids
+                </Typography>
+                <Typography color={'white'} variant='body2' align='center'>
+                    Men
+                </Typography>
+                <Typography color={'white'} variant='body2' align='center'>
+                    Women
+                </Typography>
+            </Box>
+
+            <Box>
+                <Typography color={'white'} align='center'>
+                    Follow us
+                </Typography>
+                <SocialBox>
+                <FacebookIcon/>
+                <InstagramIcon/>
+                <XIcon/>
+            </SocialBox>
+            </Box>
+        </Stack>
+    </Box>
+  )
+}
+
+export default Footer
