@@ -1,0 +1,37 @@
+[
+    {
+        "postID":1,
+        "image":"post1.jpg",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    },
+    {
+        "postID":2,
+        "image":"post2.jpg",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    },
+    {
+        "postID":3,
+        "image":"post3.jpg",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    },
+    {
+        "postID":4,
+        "image":"post4.webp",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    },
+    {
+        "postID":5,
+        "image":"post5.jpg",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    },
+    {
+        "postID":6,
+        "image":"post6.webp",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    },
+    {
+        "postID":7,
+        "image":"post7.webp",
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, at!"
+    }
+]

@@ -5,6 +5,7 @@ import XIcon from '@mui/icons-material/X';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -52,10 +53,11 @@ const Navbar = () => {
             >
                 {MenuItems.map((item, id) => {
                     return (
-
+                        
                         <Typography sx={{cursor:'pointer', fontSize:'14px'}} key={id}>
                             {item.Name}
                         </Typography>
+                        
                     )
                 })}
                 

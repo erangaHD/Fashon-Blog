@@ -1,7 +1,10 @@
-import { Avatar, Box, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
+import { Box, Divider, Typography } from '@mui/material'
 import React from 'react'
 import postImg from '../../static/user.jpg'
 import BlogCard from '../BlogCard/BlogCard'
+import getImageUrl from '../../utils'
+import popular from '../../data/popular.json'
+import PopularPost from './PopularPost'
 
 const Rightbar = () => {
   return (
@@ -9,7 +12,12 @@ const Rightbar = () => {
         <Typography align='center' bgcolor={'black'} color={'white'}>
             Most Popular
         </Typography>
-        <List sx={{ width: '100%', height:'100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+        {
+            popular.map((item, id) => {
+                return <PopularPost key={id} image={getImageUrl(item.image)} text={item.postText}/>
+            })
+        }
+        {/* <List sx={{ width: '100%', height:'100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             <ListItem alignItems="flex-end">
                 <ListItemAvatar>
                 <Avatar sx={{height:80, width:80}} variant='square' alt="Remy Sharp" src={postImg} />
@@ -99,8 +107,9 @@ const Rightbar = () => {
                 
                 />
             </ListItem>
-            <Divider variant='inset' component={'li'} />
-        </List>
+            
+        </List> */}
+        <Divider variant='inset' component={'div'} />
 
         <Typography align='center' bgcolor={'black'} color={'white'}>
             About us
