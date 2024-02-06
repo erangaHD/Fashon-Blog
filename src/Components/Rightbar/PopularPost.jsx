@@ -6,7 +6,7 @@ const PopularPost = (props) => {
     <List sx={{ width: '100%', height:'100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             <ListItem alignItems="flex-end">
                 <ListItemAvatar>
-                <Avatar sx={{height:80, width:80}} variant='square' alt="Remy Sharp" src={props.image} />
+                <Avatar sx={{height:80, width:80, mr:'10px'}} variant='square' alt="Remy Sharp" src={props.image} />
                 </ListItemAvatar>
                 <ListItemText
                 

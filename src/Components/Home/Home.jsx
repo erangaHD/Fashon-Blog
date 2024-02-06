@@ -12,7 +12,7 @@ const Home = () => {
         <Container>
             <Categories/>
             <hr style={{marginTop:20}} />
-            <Stack direction={'row'} spacing={2} mt={8}>
+            <Stack direction={{sm:'column', md:'row'}} spacing={2} mt={8}>
                 <Box flex={3} sx={{padding:'18px 100px 100px 100px'}}>
                     <Recents/>
                 </Box>

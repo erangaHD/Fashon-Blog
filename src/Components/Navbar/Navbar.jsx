@@ -1,11 +1,11 @@
-import { AppBar, Box, InputBase, Menu, MenuItem, Toolbar, Typography, styled } from '@mui/material'
+import { AppBar, Box, InputBase, Link, Menu, MenuItem, Toolbar, Typography, styled } from '@mui/material'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                     return (
                         
                         <Typography sx={{cursor:'pointer', fontSize:'14px'}} key={id}>
-                            {item.Name}
+                            <Link href={item.Link} sx={{color:'white'}}>{item.Name}</Link>
                         </Typography>
                         
                     )
@@ -93,7 +93,8 @@ const Navbar = () => {
                         sx={{cursor:'pointer', fontSize:'14px'}} key={id}
                         onClick={()=>setMenuOpen(!menuOpen)}
                         >
-                            {item.Name}
+                            <Link href={item.Link} sx={{color:'black', textDecoration:'none'}}>{item.Name}</Link>
+                            {/* {item.Name} */}
                         </MenuItem>
                     )
                 })}

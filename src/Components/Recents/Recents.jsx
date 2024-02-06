@@ -18,24 +18,7 @@ const Recents = () => {
                         <Grid item md={6} xs={12}><BlogCard title={item.title} topic={item.topic} description={item.description} cardImg={getImageUrl(item.image)}/></Grid>
                     )
                 })
-            }
-
-
-            {/* <Grid item xs={12}>
-                <BlogCard title={articles[1].title} topic={articles[1].topic} description={articles[1].description} cardImg={getImageUrl(articles[2].image)}/> 
-            </Grid>
-            <Grid item md={6} xs={12}>
-                <BlogCard title={articles[1].title} topic={articles[1].topic} description={articles[1].description} cardImg={cardImg1}/> 
-            </Grid>
-            <Grid item md={6} xs={12}>
-                <BlogCard title={articles[1].title} topic={articles[1].topic} description={articles[1].description} cardImg={cardImg1}/>
-            </Grid>
-            <Grid item md={6} xs={12}>
-                <BlogCard title={articles[1].title} topic={articles[1].topic} description={articles[1].description} cardImg={cardImg1}/>
-            </Grid>
-            <Grid item md={6} xs={12}>
-                <BlogCard title={articles[1].title} topic={articles[1].topic} description={articles[1].description} cardImg={cardImg1}/>
-            </Grid> */}
+            }           
             
             
         </Grid>

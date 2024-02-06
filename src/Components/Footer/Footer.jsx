@@ -16,11 +16,16 @@ const Footer = () => {
     <Box
     sx={{
         background:'black',
-        height:'300px'
+        minHeight:'300px',
+        bottom:'0px',
+        display:'flex',
+        justifyContent:'space-around'
+        
     }}
     >
-        <Stack direction={{xs:'row', md:'row'}} p={7}>
-            <Box flex={1}>
+        <Stack direction={{sm:'column', md:'row'}}>
+        <Stack direction={{xs:'column', sm:'row'}} >
+        <Box flex={1} p={7}>
                 <Typography color={'white'} align='center'>
                     Contact us
                 </Typography>
@@ -35,7 +40,7 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box flex={1}>
+            <Box flex={1} p={7}>
                 <Typography color={'white'} align='center'>
                     Data policy
                 </Typography>
@@ -46,8 +51,9 @@ const Footer = () => {
                     Data Saftey
                 </Typography>
             </Box>
-
-            <Box flex={1}>
+        </Stack>
+        <Stack direction={{xs:'column', sm:'row'}}>
+        <Box flex={1} p={7}>
                 <Typography color={'white'} align='center'>
                     Categories
                 </Typography>
@@ -62,16 +68,19 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box>
+            <Box flex={1} p={7} >
                 <Typography color={'white'} align='center'>
                     Follow us
                 </Typography>
-                <SocialBox>
-                <FacebookIcon/>
-                <InstagramIcon/>
-                <XIcon/>
-            </SocialBox>
-            </Box>
+                <SocialBox justifyContent={'center'}>               
+                    <FacebookIcon/>
+                    <InstagramIcon/>
+                    <XIcon/>                
+                 </SocialBox>
+            </Box>    
+        </Stack>    
+
+            
         </Stack>
     </Box>
   )
